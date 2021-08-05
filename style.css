@@ -4,6 +4,8 @@
 /* common styles or utilities */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .top-banner{
     display: flex;
@@ -11,7 +13,18 @@ body {
     color: white;
     justify-content: space-evenly;
     align-content: center;
+    height: 677px;
+    padding-top: 135px;
 
+}
+.top-button{
+    background-color: #E02C6D;
+    padding: 10px;
+    border-radius: 5px;
+}
+.top-button a {
+    color: white;
+    text-decoration: none;
 }
 h1{
     font-size: 64px;
@@ -23,4 +36,29 @@ h1{
 } */
 .half-banner img {
     width: 557px;
+}
+/* player list style  */
+.player-list{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    width: 1050px;
+    align-content: center;
+    
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid rebeccapurple;
+    margin: 10px;
+    padding: 20px;
+}
+.player img {
+    width:300px;
+
+}
+.player-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
