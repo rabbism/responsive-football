@@ -93,11 +93,67 @@ h1{
 }
 .icon {
     font-size: 32px;
-/* }media quarry  */
-@media only screen and(max-width :688px){
-    .top-banner{
-        background-color: red;
-    }
 }
-    
+/* media quarry  */
+@media only screen and (max-width:688px) {
+    .top-banner {
+      flex-direction: column;
+      padding-top: 50px;
+      width: 100%;
+      align-items:stretch;
+      
+    }
+    h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .half-banner  {
+        width:100%;
+        text-align: center;
+    }
+    .half-banner img {
+        width: 100%;
+    }
+    /* media quarry palyer list  */
+
+    .player-list {
+        grid-template-columns:repeat(1,1fr);
+
+    }
+    /* banner of last side  */
+    .banner-items {
+        flex-direction: column;
+        padding-top: 25px;
+         width: 100%;
+    }
+    .last-banner {
+        flex-wrap: wrap;
+    }
+    .last-half-banner1{
+        width: 329px;
+        height: 299px;
+        flex-wrap: wrap;
+
+    }
+    .last-half-banner{
+        width: 100%;
+    }
+    .last-half-banner img{
+        width: 328px;
+        height: 248px;
+        
+    }
+    /* media quarry of footer  */
+    .footers {
+        width: 100%;
+        
+    }
+    .footer-items{
+        flex-direction: column;
+    }
+    .logo img{
+        width: 60%;
+    }
+
 }
